@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
@@ -33,7 +33,9 @@
           <input type="radio" name="tabs" id="tab1" checked="checked">
           <label for="tab1">Tab 1</label>
           <div class="accordion__tab">
-            <img src="https://dummyimage.com/200x300/f2f2f2/D1D2D3.png&text=Image">
+            <div class="accordion__tab--image-container">
+              <img src="https://dummyimage.com/200x300/f2f2f2/D1D2D3.png&text=Image">
+            </div>
             <div class="accordian__tabs--text">
               <h2>Neque deserunt amet aperiam.</h2>
               <hr />
@@ -47,13 +49,25 @@
                 molestias non suscipit. Sunt neque eligendi molestiae ea excepturi sed. Ut deserunt quam qui optio eos beatae
                 et quam odit. Iure et consectetur laboriosam animi sit dicta.
               </p>
-            </div>
+              <p>
+                Ducimus eum consequatur sit omnis qui. Est voluptas enim ipsam. Quo aut consequatur sint unde libero reprehenderit sit. Voluptatem
+                autem asperiores illum sapiente excepturi. Labore non voluptas nobis. Numquam et at libero placeat illum rem laudantium.
+                Nostrum eveniet praesentium quaerat ducimus. Sint libero doloribus impedit. Quo voluptates illo est eveniet cupiditate.
+                Et voluptas et ut voluptate quos nobis sint. Sint perferendis rerum facere.
+              </p>
+              <p>
+                Beatae non omnis accusantium iure. Debitis recusandae aut id aut odit quod voluptatem ex id. Vel illum eveniet assumenda
+                expedita dolorem dolor perspiciatis. Odio omnis rerum. Maiores qui doloribus qui. Labore neque ut soluta natus enim.
+              </p>
+          </div>
           </div>
     
           <input type="radio" name="tabs" id="tab2">
           <label for="tab2">Tab 2</label>
           <div class="accordion__tab">
-            <img src="https://dummyimage.com/200x300/f2f2f2/D1D2D3.png&text=Image">
+            <div class="accordion__tab--image-container">
+              <img src="https://dummyimage.com/200x300/f2f2f2/D1D2D3.png&text=Image">
+            </div>
             <div class="accordian__tabs--text">
               <h2>Vitae aut rerum sunt officiis nisi eos tempora.</h2>
               <hr />
@@ -74,7 +88,9 @@
           <input type="radio" name="tabs" id="tab3">
           <label for="tab3">Tab 3</label>
           <div class="accordion__tab">
-            <img src="https://dummyimage.com/200x300/f2f2f2/D1D2D3.png&text=Image">
+            <div class="accordion__tab--image-container">
+              <img src="https://dummyimage.com/200x300/f2f2f2/D1D2D3.png&text=Image">
+            </div>
             <div class="accordian__tabs--text">
               <h2>Vel quod perspiciatis nobis eaque eum nihil.</h2>
               <hr />
@@ -95,7 +111,9 @@
           <input type="radio" name="tabs" id="tab4">
           <label for="tab4">Tab 4</label>
           <div class="accordion__tab">
-            <img src="https://dummyimage.com/200x300/f2f2f2/D1D2D3.png&text=Image">
+            <div class="accordion__tab--image-container">
+              <img src="https://dummyimage.com/200x300/f2f2f2/D1D2D3.png&text=Image">
+            </div>
             <div class="accordian__tabs--text">
               <h2>Velit pariatur est commodi sint praesentium omnis.</h2>
               <hr />
@@ -114,13 +132,18 @@
     
         </div>
       </div>
-      <div class="section__footer--embed-code">
-        <p data-height="400" data-theme-id="light" data-slug-hash="PedXXp" data-default-tab="html,css" data-user="mngatewood" data-embed-version="2"
-          data-pen-title="Accordion Tabs" class="codepen">See the Pen
-          <a href="https://codepen.io/mngatewood/pen/PedXXp/">Accordion Tabs</a> by Michael Gatewood (
-          <a href="https://codepen.io/mngatewood">@mngatewood</a>) on
-          <a href="https://codepen.io">CodePen</a>.</p>
-        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      <div class="section__footer">
+        <button class="section__footer--toggle-code" id="accordion__toggle-code-button">
+          VIEW CODE
+        </button>
+        <div class="section__footer--embed-code hidden" id="accordion__code-container">
+          <p data-height="400" data-theme-id="light" data-slug-hash="PedXXp" data-default-tab="html,css" data-user="mngatewood" data-embed-version="2"
+            data-pen-title="Accordion Tabs" class="codepen">See the Pen
+            <a href="https://codepen.io/mngatewood/pen/PedXXp/">Accordion Tabs</a> by Michael Gatewood (
+            <a href="https://codepen.io/mngatewood">@mngatewood</a>) on
+            <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
       </div>
     </section>
     <section class="main__section">
@@ -147,7 +170,7 @@
     </section>
   </main>
 
-  <!-- <script type="text/javascript" src="scripts.js"></script> -->
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

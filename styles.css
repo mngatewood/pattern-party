@@ -3,6 +3,10 @@ body {
   font-weight: 300;
 }
 
+.hidden {
+  display: none;
+}
+
 p {
   margin: 12px 0;
   line-height: 24px;
@@ -128,8 +132,13 @@ h3 {
   background: #FFFFFF;
 }
 
-.accordion__tabs img {
-  margin-right: 24px; 
+.accordion__tab--image-container {
+  margin-right: 24px;
+}
+
+.accordion__tab img {
+  width: 300px;
+  object-fit: contain;
 }
 
 .accordion__tabs h2 {
@@ -151,8 +160,23 @@ h3 {
   display: flex; 
 }
 
+.section__footer {
+  text-align: center;
+  padding: 15px;
+}
+
 .section__footer--embed-code {
   width: 80%;
   margin: 20px auto;
   border: 1px solid #D1D2D3;
+}
+
+.section__footer--toggle-code {
+  color: #F2F2F2;
+  background-color: #2F2235;
+  width: 250px;
+  height: 50px;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 25px;
 }
