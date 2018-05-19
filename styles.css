@@ -8,7 +8,7 @@ body {
 }
 
 p {
-  margin: 12px 0;
+  margin-top: 25px;
   line-height: 24px;
 }
 
@@ -101,23 +101,26 @@ h3 {
 }
 
 .accordion__tabs label {
-  -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
   -ms-flex-order: 1;
-  order: 1;
   flex: 1;
   display: flex;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   cursor: pointer;
   background: #F2F2F2;
   border: 1px solid #FFFFFF;
   color: #666666;
-  font-weight: 300;
   -webkit-transition: background ease 0.2s;
   transition: background ease 0.2s;
 }
 
-.accordion__tabs .accordion__tab {
+  label img {
+    display: none;
+    position: absolute;
+    right: 80px;
+    height: 25px;
+  }
+
+.accordion__tab {
   -webkit-box-ordinal-group: 100;
   -webkit-order: 99;
   -ms-flex-order: 99;
@@ -128,7 +131,7 @@ h3 {
   flex-grow: 1;
   width: 100%;
   display: none;
-  padding: 1rem;
+  padding: 25px;
   background: #FFFFFF;
 }
 
@@ -156,8 +159,8 @@ h3 {
   font-weight: 600;
 }
 
-.accordion__tabs input[type="radio"]:checked + label + .accordion__tab { 
-  display: flex; 
+.accordion__tabs input[type="radio"]:checked + label + .accordion__tab {
+  display: flex;
 }
 
 .section__footer {
@@ -179,4 +182,77 @@ h3 {
   font-weight: 300;
   font-size: 16px;
   margin: 25px;
+}
+
+@media (max-width: 800px) { 
+
+  .accordion__tab--image-container {
+    width: 200px;
+  }
+
+  .accordion__tab img {
+    width: 100%;
+  }
+
+  .accordian__tabs--text {
+    width: 50%
+  }
+
+}
+
+@media (max-width: 600px) { 
+  .accordion__tabs .accordion__tab,  
+  .accordion__tabs label {
+    -webkit-box-ordinal-group: initial;
+    -webkit-order: initial;
+    -ms-flex-order: initial;
+    order: initial;
+    width: auto;
+  }
+  
+  .accordion__tabs {    
+    flex-direction: column;
+  }
+  
+  .accordion__tab {
+    padding: 0;
+  }
+  
+  .accordion__tabs label {
+    font-size: 24px;
+    border-bottom: 1px solid #D1D2D3;
+  }
+
+  .accordian__tabs--text {
+    width: auto;
+    margin: 25px;
+  }
+
+  .accordion__tab--image-container,
+  .accordion__tab img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  label img {
+    display: block;
+  }
+
+  .accordion__tabs input[type="radio"]:checked + label + .accordion__tab {
+    display: block;
+  }
+
+  .accordion__tabs input[type="radio"]:checked + label { 
+    color: #666666;
+}
+
+  .accordion__tabs input[type="radio"]:checked + label img + #accordion--plus {
+    display: none;
+  }
+
+  .accordion__tabs input[type="radio"]:checked + label img + #accordion--minus {
+    display: block;
+  }
+
 }
