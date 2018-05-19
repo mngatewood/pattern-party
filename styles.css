@@ -49,14 +49,15 @@ h2 {
 }
 
 .section__heading__container {
+  display: flex;
   width: 90%;
   margin: 40px auto;
 }
 
-h3 {
-  display: flex;
+.section__heading {
+  display: inline-block;
   font-size: 18px;
-  align-items: left;
+  margin-right: 25px;
 }
 
 .section__heading--hr {
@@ -201,6 +202,35 @@ h3 {
 }
 
 @media (max-width: 600px) { 
+
+  header {
+    height: 110px;
+  }
+
+  .header__container {
+    flex-direction: column;
+    text-align: center
+  }
+
+  #header__container--student-name {
+    text-align: center;
+    margin-top: 25px
+  }
+
+  .section__heading__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section__heading {
+    margin: 0;
+  }
+
+  .section__heading--hr {
+    width: 100px;
+    margin: 20px auto;
+  }
+
   .accordion__tabs .accordion__tab,  
   .accordion__tabs label {
     -webkit-box-ordinal-group: initial;
