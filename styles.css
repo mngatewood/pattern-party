@@ -137,12 +137,12 @@ h2 {
   transition: background ease 0.2s;
 }
 
-  label img {
-    display: none;
-    position: absolute;
-    right: 80px;
-    height: 25px;
-  }
+label img {
+  display: none;
+  position: absolute;
+  right: 80px;
+  height: 25px;
+}
 
 .accordion__tab {
   -webkit-box-ordinal-group: 100;
@@ -231,6 +231,9 @@ h2 {
   grid-column-start: 2;
   grid-column-end: 4;
 }
+
+
+
 
 
 @media (max-width: 800px) { 
@@ -372,6 +375,11 @@ h2 {
 
 }
 
+
+
+
+
+
 @media (max-width: 500px) { 
 
   .flexible-cards {
@@ -388,7 +396,7 @@ h2 {
     grid-column-start: 1;
   }
 
-    #flexible-card--seven {
+  #flexible-card--seven {
     grid-row-start: 7;
   }
 
