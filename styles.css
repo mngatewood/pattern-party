@@ -280,6 +280,11 @@ label img {
   /* display:  flex; */
   /* flex-direction: column; */
   flex: 1 1;
+  cursor:  pointer;
+}
+
+#header-bar--nav li:hover {
+  background-color: #F2F2F2;
 }
 
 #header-bar--nav li span {
@@ -388,6 +393,10 @@ label img {
     line-height: 25px;
   }
 
+  #header-bar--nav li:hover {
+    background-color: #D1D2D3;
+  }
+
   #header-bar--search {
     order: 2;
     flex-grow:  1;
@@ -489,8 +498,7 @@ label img {
     display: block;
   }
 
-}
-
+}  
 
 
 
@@ -531,8 +539,5 @@ label img {
   #header-bar--mobile-menu {
     height: 267px;
   }
-
-
-
 
 }

@@ -32,5 +32,20 @@ $("#header-bar__toggle-code-button").click(toggleCodeHeaderBar)
 const toggleHiddenMenu = () => {
   $('#header-bar--mobile-menu').slideToggle("slow");
   $('#header-bar--nav').slideToggle("slow");
-  $('#header-bar--search').slideToggle("slow");
+  if ($(window).width() < 500 && $('#header-bar--search').css("display") == "none") {
+    console.log("true");
+    setTimeout(() => {
+      $('#header-bar--search').css("display", "block");
+    }, 500);
+    $('#header-bar--search').css("top", "300");
+  } else if ($(window).width() < 500) {
+    $('#header-bar--search').css("display", "none")
+  }
+}
+
+if ($(window).width() > 500) {
+  $('#header-bar--search').css("display", "block");
+}
+else {
+  $('#header-bar--search').removeAttr('display');
 }
