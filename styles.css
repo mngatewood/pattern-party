@@ -232,8 +232,86 @@ label img {
   grid-column-end: 4;
 }
 
+.main__header-bar {
+  display: flex;
+  /* flex-direction: row; */
+  background-color: #D1D2D3;
+  justify-content:  space-between;
+  /* padding: 20px; */
+  font-size: 20px;
+  font-weight:  300;
+  height: 100px;
+}
 
+#main__header-bar--icon,
+#main__header-bar--menu {
+  background-size: 50px;
+  margin: 20px;
+  flex: 0 0 50px;
+  background-repeat:  no-repeat;
+  background-position:  center center;
+  width: 100px;
+}
 
+#main__header-bar--icon {
+  order: 1;
+  background-image: url("./images/icon-placeholder.png");
+}
+
+#main__header-bar--nav {
+  display: flex;
+  color: #666666;
+  /* flex: 1; */
+  order: 2;
+  /* margin: 25px; */
+  /* flex-direction:  column; */
+  align-items:  center;
+}
+
+#main__header-bar--nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* margin: 0 25px; */
+}
+
+#main__header-bar--nav li {
+  margin: 15px;
+  line-height: 25px;
+  /* display:  flex; */
+  /* flex-direction: column; */
+  flex: 1 1;
+}
+
+#main__header-bar--nav li span {
+  display: inline-block;
+}
+
+#main__header-bar--search {
+  border: 1px solid #666666;
+  order: 3;
+  margin: 20px;
+  background-image: url("./images/search.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-color: #F5F5F5;
+  padding-left: 40px;
+  font-size: inherit;
+  min-width: 139px;
+}
+
+#main__header-bar--search input {
+  min-width: 100px;
+}
+
+#main__header-bar--menu {
+  display: none;
+  right: 0;
+  order: 4;
+  background-image: url("./images/menu.svg");
+  float: right;
+}
 
 
 @media (max-width: 800px) { 
@@ -247,7 +325,7 @@ label img {
   }
 
   .accordian__tabs--text {
-    width: 50%
+    width: 50%;
   }
 
   .flexible-cards {
@@ -280,6 +358,43 @@ label img {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+
+  #main__header-bar--nav {
+  order: 4;
+  border: 1px solid black;
+  width: 100%;
+  flex: none;
+  justify-content:  flex-start;
+  display: none;
+  /* float: none; */
+}
+
+#main__header-bar--nav ul {
+  flex-direction:  column;
+}
+
+#main__header-bar--nav li {
+  margin: 12px;
+  line-height: 25px;
+}
+
+#main__header-bar--search {
+  order: 2;
+  flex-grow:  1;
+  /* margin: 5px 20px; */
+}
+
+#main__header-bar--search input {
+  min-width: 100px;
+}
+
+#main__header-bar--menu {
+  display: block;
+  order: 3;
+}
+
+
+
 
 }
 
