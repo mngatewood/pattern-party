@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
@@ -244,7 +245,8 @@
             <a href="https://codepen.io/mngatewood/pen/PeVYqq/">Flexible Cards</a> by Michael Gatewood (
             <a href="https://codepen.io/mngatewood">@mngatewood</a>) on
             <a href="https://codepen.io">CodePen</a>.</p>
-          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>        </div>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>        
+        </div>
       </div>
     </section>
     <section class="main__section">
@@ -253,9 +255,42 @@
         <div class="section__heading--hr"></div>
       </div>
       <div class="main__header-bar">
-      </div>
-      <div class="section__footer--embed-code">
-
+        <div id="header-bar">
+          <div id="header-bar--icon"></div>
+          <div id="header-bar--nav" class="header-bar--hidden">
+            <ul>
+              <li>
+                <span>Navigation </span>
+                <span>Link 1</span>
+              </li>
+              <li>
+                <span>Navigation </span>
+                <span>Link 2</span>
+              </li>
+              <li>
+                <span>Navigation </span>
+                <span>Link 3</span>
+              </li>
+            </ul>
+          </div>
+          <input type="search" placeholder="Search" id="header-bar--search" />
+          <div id="header-bar--menu" onClick="toggleHiddenMenu()"></div>
+        </div>
+        <div id="header-bar--mobile-menu" class="header-bar--hidden"></div>
+        <div class="section__footer">
+          <div class="section__footer--embed-code">
+            <button class="section__footer--toggle-code" id="header-bar__toggle-code-button">
+              VIEW CODE
+            </button>
+            <div class="section__footer--embed-code hidden" id="header-bar__code-container">
+              <p data-height="265" data-theme-id="light" data-slug-hash="zaYQLV" data-default-tab="html,css" data-user="mngatewood"
+                data-embed-version="2" data-pen-title="Header Bar" class="codepen">See the Pen
+                <a href="https://codepen.io/mngatewood/pen/zaYQLV/">Header Bar</a> by Michael Gatewood (
+                <a href="https://codepen.io/mngatewood">@mngatewood</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>          </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
